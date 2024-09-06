@@ -25,7 +25,7 @@ export class BrowseMessage extends YouTubeMessage {
         this.removeShorts(obj, i)
       }
     })
-    await this.translate()
+    // await this.translate()
     return this
   }
 
@@ -158,7 +158,7 @@ export class PlayerMessage extends YouTubeMessage {
     delete this.message?.playbackTracking?.pageadViewthroughconversion
     // 增加 premium 特性
     this.addPlayAbility()
-    this.addTranslateCaption()
+    // this.addTranslateCaption()
     this.needProcess = true
     return this
   }
